@@ -1,1 +1,1 @@
-keremi cok seviyorum
+VHDL basic concepts without SoC structure
