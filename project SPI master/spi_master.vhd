@@ -1,37 +1,4 @@
---------------------------------------------------------------------------------
--- AUTHOR:			MEHMET BURAK AYKENAR
--- CREATED:			09.12.2019
--- REVISION DATE:	09.12.2019
---
---------------------------------------------------------------------------------
--- DESCRIPTION:		
---    This module implements master part of SPI communication interface and can be used to any SPI slave IC.
- 
---    In order to read from a slave IC, mosi_data_i input signal should be assigned to desired value and en_i signal should be high. 
---    In order to write to a slave IC, en_i input signal should be high. 
---    data_ready_o output signal has the logic high value for one clock cycle as read or/and write operation finished. miso_data_o output signal
--- has the data read from slave IC. 
---    In order to read or/and write consecutively, en_i signal should be kept high. To end the transaction, en_i input signal should be assigned to zero
--- when data_ready_o output signal gets high.
---------------------------------------------------------------------------------
--- Limitation/Assumption: In order to use this module properly, the ratio of  (c_clkfreq / c_sclkFreq) should be equal to 8 or more. 
---    For higher SCLK frequencies are possible but more elaboration is needed.
--- Notes: c_cpol and c_cpha parameters are clock polarity and clock phase, respectively.
---------------------------------------------------------------------------------
--- VHDL DIALECT: VHDL '93
---
---------------------------------------------------------------------------------
--- PROJECT 	: General purpose
--- BOARD 	: General purpose
--- ENTITY 	: spi_master
---------------------------------------------------------------------
--- FILE 	: spi_master.vhd
---------------------------------------------------------------------------------
--- REVISION HISTORY:
--- REVISION  DATE 		 AUTHOR        COMMENT
--- --------  ----------  ------------  -----------
--- 1.0	     19.12.2019	 M.B.AYKENAR   INITIAL REVISION
---------------------------------------------------------------------------------
+
  
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
