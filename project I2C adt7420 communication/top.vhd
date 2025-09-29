@@ -1,22 +1,4 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 	Mehmet Burak AYKENAR
--- 
--- Create Date: 07/03/2019 09:03:50 AM
--- Design Name: 
--- Module Name: top - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
+
 
 
 library IEEE;
